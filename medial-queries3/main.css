@@ -1,3 +1,47 @@
-body {
-  background: peachpuff;
-}
+    body {
+        background: peachpuff;
+    }
+    
+    * {
+        border: 1px solid rgb(70, 7, 70);
+    }
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 100vh;
+    }
+    
+    main {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .b,
+    .c,
+    .d,
+    .e,
+    .f,
+    .g {
+        min-height: 20vh;
+        min width: 30vh;
+        margin: 0.5em
+    }
+    
+    header,
+    main,
+    aside {
+        margin: 0.5em;
+    }
+    
+    header {
+        flex-grow: 1;
+    }
+    
+    main,
+    aside {
+        flex-grow: 3;
+    }
